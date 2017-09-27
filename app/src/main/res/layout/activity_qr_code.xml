@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.administrator.qrcode.QrCodeActivity">
+    <com.qmuiteam.qmui.widget.QMUITopBar
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/toolBar"
+        >
+        <ImageView
+            android:id="@+id/right_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            />
+
+    </com.qmuiteam.qmui.widget.QMUITopBar>
+
+    <cn.bingoogolapple.qrcode.zxing.ZXingView
+        android:id="@+id/zxingview"
+        style="@style/MatchMatch"
+        app:qrcv_animTime="1000"
+        app:qrcv_borderColor="@android:color/white"
+        app:qrcv_borderSize="1dp"
+        app:qrcv_cornerColor="@color/app_color_blue"
+        app:qrcv_cornerLength="20dp"
+        app:qrcv_cornerSize="3dp"
+        app:qrcv_maskColor="#33FFFFFF"
+        app:qrcv_rectWidth="250dp"
+
+        app:qrcv_scanLineColor="@color/app_color_blue_2_disabled"
+        app:qrcv_scanLineSize="1dp"
+        app:qrcv_topOffset="90dp" />
+    <LinearLayout
+        android:layout_marginBottom="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_alignParentBottom="true">
+        <ImageView
+            android:id="@+id/qr1_iv"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:src="@drawable/qrcode_selector"
+            android:layout_height="wrap_content"
+            tools:ignore="ContentDescription" />
+        <ImageView
+            android:id="@+id/qr2_iv"
+
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:src="@drawable/qrcode2_selector"
+            android:layout_height="wrap_content"
+            tools:ignore="ContentDescription" />
+        <ImageView
+            android:id="@+id/qr3_iv"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:src="@drawable/qrcode3_selector"
+            android:layout_height="wrap_content"
+            tools:ignore="ContentDescription" />
+
+    </LinearLayout>
+</RelativeLayout>

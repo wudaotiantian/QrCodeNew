@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.administrator.qrcode.MainActivity">
+<com.qmuiteam.qmui.widget.QMUITopBar
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:id="@+id/toolBar"
+    >
+    <ImageView
+        android:id="@+id/right_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        />
+
+</com.qmuiteam.qmui.widget.QMUITopBar>
+<WebView
+    android:id="@+id/web_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@+id/toolBar"
+
+    ></WebView>
+</RelativeLayout>
